@@ -6,24 +6,24 @@
 #    By: iait-ouf <aitouflih.iman@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/18 17:33:28 by iait-ouf          #+#    #+#              #
-#    Updated: 2024/09/11 15:12:51 by iait-ouf         ###   ########.fr        #
+#    Updated: 2025/05/29 17:16:11 by iait-ouf         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = philo
 
-INCLUDE = philo.h
+INCLUDE = library/philo.h
 
 CFLAGS = -pthread -Wall -Werror -Wextra -finline-functions -fvectorize -fslp-vectorize -ffast-math -falign-functions -funroll-loops -fstrict-aliasing -fomit-frame-pointer -flto -Ofast -O1 -O2 -Os -O3 #-fsanitize=address -g
 # If needed fsanitize and debug flag just here to see if there are data races
 
-SRCS = main.c\
-	   parsing_utils.c\
-	   routine.c\
-	   routine_utils.c\
-	   init.c\
-	   free_handler.c\
-	   display_utils.c
+SRCS = 	   srcs/main.c\
+	   srcs/parsing_utils.c\
+	   srcs/routine.c\
+	   srcs/routine_utils.c\
+	   srcs/init.c\
+	   srcs/free_handler.c\
+	   srcs/display_utils.c
 
 OBJ = $(SRCS:.c=.o)
 
