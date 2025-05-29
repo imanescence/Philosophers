@@ -5,3 +5,6 @@
 </p>
 
 This project tackles the **classic Dining Philosophers problem**. The goal was to correctly manage concurrency by **implementing multithreading** with pthreads, using mutexes to prevent data races and deadlocks. Through this, I learned practical synchronization techniques, thread management, and how to handle shared resources safely.
+
+
+⚠️ NB: This project was developed and tested exclusively on macOS. Compatibility with Linux or other Unix systems is not guaranteed.
